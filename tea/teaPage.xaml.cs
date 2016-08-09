@@ -80,12 +80,13 @@ namespace tea {
 			}
 
 			private async void Download() {
-				var client = new HttpClient();
-				client.DefaultRequestHeaders.TryAddWithoutValidation("Accept", "application/json");
-				Info = JsonConvert.DeserializeObject<InfoModel>(await client.GetStringAsync(Eddy.Url));
-				Image = ImageSource.FromUri(new Uri(Eddy.Url, Info.ThumbnailUrl));
-				Name = Info.Name;
-				Detail = Info.Title;
+				using(var client = new HttpClient()) {
+					client.DefaultRequestHeaders.TryAddWithoutValidation("Accept", "application/json");
+					Info = JsonConvert.DeserializeObject<InfoModel>(await client.GetStringAsync(Eddy.Url));
+					Image = ImageSource.FromUri(new Uri(Eddy.Url, Info.ThumbnailUrl));
+					Name = Info.Name;
+					Detail = Info.Title;
+				}
 			}
 		}
 	}
