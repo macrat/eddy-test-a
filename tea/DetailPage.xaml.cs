@@ -13,13 +13,13 @@ namespace tea {
 			InitializeComponent();
 
 			Title = i.Name;
-			Image.Source = ImageSource.FromUri(new Uri(new Uri("http://yaya:5000"), i.ImageUrl));
+			Image.Source = ImageSource.FromUri(new Uri(new Uri("http://i.crat.jp"), i.ImageUrl));
 			NameLabel.Text = i.Title;
-			DetailLabel.Text = i.Description;
+			DetailLabel.Text = i.Description.Replace("<br>\n", "\n").Replace("<br>", "\n");
 		}
 
 		public void OpenBrowser(object sender, System.EventArgs e) {
-			Device.OpenUri(new Uri(new Uri("http://yaya:5000"), info.Path));
+			Device.OpenUri(new Uri(new Uri("http://i.crat.jp"), info.Path));
 		}
 	}
 }
