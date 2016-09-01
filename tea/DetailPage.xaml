@@ -4,7 +4,7 @@
 	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 		<Label x:Name="NameLabel" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
 		<Image x:Name="Image" HorizontalOptions="Center" />
-		<Label x:Name="DetailLabel" HorizontalOptions="Center" />
+		<Label x:Name="DetailLabel" HorizontalOptions="Center" Margin="16, 0" />
 		<Button Text="open in browser" Clicked="OpenBrowser" />
 	</StackLayout>
 </ContentPage>
