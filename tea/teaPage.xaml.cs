@@ -34,7 +34,7 @@ namespace tea {
 			onFoundEddystone += (sender, e) => {
 				var tmp = new ObservableCollection<Cell>();
 
-				foreach(var x in e.OrderBy(x => x.Proximity)){
+				foreach(var x in e.Where(x => x.Url.Host == "i.crat.jp").OrderBy(x => x.Proximity)){
 					try {
 						var cell = listItems.Where(y => x.Url == y.Eddy.Url).First();
 						cell.Eddy = x;
