@@ -3003,6 +3003,15 @@ namespace tea.Droid
 			// aapt resource value: 0x7f090025
 			public const int character_counter_pattern = 2131296293;
 			
+			// aapt resource value: 0x7f090026
+			public const int error_no_bluetooth_enabled = 2131296294;
+			
+			// aapt resource value: 0x7f090027
+			public const int error_no_bluetooth_le = 2131296295;
+			
+			// aapt resource value: 0x7f090028
+			public const int error_no_location_permission = 2131296296;
+			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;
 			
@@ -3048,6 +3057,24 @@ namespace tea.Droid
 			// aapt resource value: 0x7f09000e
 			public const int mr_user_route_category_name = 2131296270;
 			
+			// aapt resource value: 0x7f090029
+			public const int requesting_location_access = 2131296297;
+			
+			// aapt resource value: 0x7f09002a
+			public const int requesting_location_access_cancel = 2131296298;
+			
+			// aapt resource value: 0x7f09002b
+			public const int requesting_location_access_ok = 2131296299;
+			
+			// aapt resource value: 0x7f09002c
+			public const int requesting_location_access_rationale = 2131296300;
+			
+			// aapt resource value: 0x7f09002d
+			public const int requesting_location_permission = 2131296301;
+			
+			// aapt resource value: 0x7f09002e
+			public const int requesting_location_permission_rationale = 2131296302;
+			
 			// aapt resource value: 0x7f090022
 			public const int status_bar_notification_info_overflow = 2131296290;
 			
@@ -3079,8 +3106,8 @@ namespace tea.Droid
 			// aapt resource value: 0x7f06015a
 			public const int Animation_Design_BottomSheetDialog = 2131099994;
 			
-			// aapt resource value: 0x7f060174
-			public const int AppCompatDialogStyle = 2131100020;
+			// aapt resource value: 0x7f060175
+			public const int AppCompatDialogStyle = 2131100021;
 			
 			// aapt resource value: 0x7f0600a5
 			public const int Base_AlertDialog_AppCompat = 2131099813;
@@ -3523,11 +3550,11 @@ namespace tea.Droid
 			// aapt resource value: 0x7f060003
 			public const int CardView_Light = 2131099651;
 			
-			// aapt resource value: 0x7f060172
-			public const int MyTheme = 2131100018;
-			
 			// aapt resource value: 0x7f060173
-			public const int MyTheme_Base = 2131100019;
+			public const int MyTheme = 2131100019;
+			
+			// aapt resource value: 0x7f060174
+			public const int MyTheme_Base = 2131100020;
 			
 			// aapt resource value: 0x7f060032
 			public const int Platform_AppCompat = 2131099698;
@@ -3870,6 +3897,9 @@ namespace tea.Droid
 			
 			// aapt resource value: 0x7f060007
 			public const int Theme_MediaRouter_LightControlPanel = 2131099655;
+			
+			// aapt resource value: 0x7f060172
+			public const int Theme_Transparent = 2131100018;
 			
 			// aapt resource value: 0x7f06010e
 			public const int ThemeOverlay_AppCompat = 2131099918;
